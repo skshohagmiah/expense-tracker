@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <h1>Expense Tracker</h1>
+
+    <div class="container">
+      <div class="balanced">
+        <h3>Your Balance</h3>
+        <strong></strong>
+      </div>
+
+      <div class="income-expense">
+        <div class="income">
+          <h4>Income</h4>
+          <strong></strong>
+        </div>
+        <div class="expense">
+          <h4>Expense</h4>
+          <strong></strong>
+        </div>
+      </div>
+
+      <div class="history">
+        <h3>History</h3>
+        <div class="history-container"></div>
+        <button class="clear-btn">Clear History</button>
+      </div>
+
+      <div class="add-transaction">
+        <h3>Add New Transaction</h3>
+        <form action="" class="transaction">
+          <div class="single-input">
+            <label for="name">Description :</label>
+            <input
+              type="text"
+              placeholder="Enter Description"
+              name=""
+              id="name"
+            />
+          </div>
+          <div class="single-input">
+            <label for="type">Type :</label>
+            <select name="" id="type">
+              <option value="options">Select An Option</option>
+              <option value="income">income</option>
+              <option value="expense">expense</option>
+            </select>
+          </div>
+          <div class="single-input">
+            <label for="amount">Amount :</label>
+            <input type="number" placeholder="Enter Your Amount" id="amount" />
+          </div>
+
+          <input type="submit" value="Add Transaction" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
